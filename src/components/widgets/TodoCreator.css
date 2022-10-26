@@ -1,0 +1,7 @@
+.todo-creator {
+    flex: 1;
+    padding: 20px;
+    background: #daf2ef;
+    display: flex;
+    flex-direction: row;
+}
