@@ -1,0 +1,7 @@
+.todo-list {
+    flex: 1;
+    display: flex;
+    padding: 20px;
+    background: #daf2ef;
+    flex-direction: column;
+}

@@ -1,0 +1,19 @@
+.button {
+    font-size: 20px;
+    padding: 5px 15px;
+    margin: 20px 0;
+    opacity: 90%;
+    border: none;
+}
+
+.button:hover {
+    opacity: 100%;
+}
+
+.add {
+    background: #8faadc;
+}
+
+.remove {
+    background: #e9c46a;
+}
