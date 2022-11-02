@@ -27,13 +27,16 @@ export const TodoList = ({
     // Handle show all checkbox
     filteredTodos = showAll ? filteredTodos : filteredTodos.filter(t => !t.done)
 
+    // TODO: side effect on each sorting call up-, descending
+    // @Merlin please check
+
     // Sort according to done, importance and text
-    filteredTodos = filteredTodos.sort(
-      (t1, t2) =>
-        Number(t1.done) - Number(t2.done) ||
-        t2.importance - t1.importance ||
-        t1.text.localeCompare(t2.text)
-    )
+    // filteredTodos = filteredTodos.sort(
+    //   (t1, t2) =>
+    //     Number(t1.done) - Number(t2.done) ||
+    //     t2.importance - t1.importance ||
+    //     t1.text.localeCompare(t2.text)
+    // )
 
     // Sort and render
     return filteredTodos.map(t => (

@@ -12,6 +12,8 @@ interface Props {
   setInput: (text: string) => void
   showAll: boolean
   setShowAll: (state: boolean) => void
+  sortAscending: () => void
+  sortDescending: () => void
 }
 
 export const TodoCreator = ({
@@ -21,6 +23,8 @@ export const TodoCreator = ({
   setInput,
   showAll,
   setShowAll,
+  sortAscending,
+  sortDescending,
 }: Props) => {
   const createAndAddTodo = () => {
     if (input === '') return
@@ -36,6 +40,14 @@ export const TodoCreator = ({
 
   return (
     <div className="todo-creator" onKeyDown={handleKeyboardEvent}>
+      <Button onClick={sortAscending} buttonType="up">
+        {' '}
+        &#8593;
+      </Button>
+      <Button onClick={sortDescending} buttonType="down">
+        {' '}
+        &#8595;
+      </Button>
       <Input input={input} setInput={setInput}></Input>
       <Button onClick={createAndAddTodo} buttonType="add">
         Add
