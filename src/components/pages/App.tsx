@@ -1,5 +1,6 @@
 import './App.css'
 
 export const App = () => {
-  return <div>{/* TOOD: implement App */}</div>
+  const message = "Let's start coding..."
+  return <div className="content">{message}</div>
 }
